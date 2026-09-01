@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prisam KC — Civil Engineering Portfolio</title>
+<meta name="description" content="Portfolio of Prisam KC, fourth-year civil engineering student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Home">
+      <svg class="brand-mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+        <path d="M4 26 L16 6 L28 26 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M4 26 L28 26" stroke="currentColor" stroke-width="2"/>
+        <path d="M10 26 L16 16 L22 26" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+      <span class="brand-name">Prisam KC</span>
+    </a>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+
+      <div class="photo-upload">
+        <div class="photo-frame" id="photoFrame">
+          <img id="photoImg" alt="Profile photo" hidden>
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+              <path d="M4 8h3l1.6-2.4A2 2 0 0 1 10.3 4.6h3.4a2 2 0 0 1 1.7 1L17 8h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <circle cx="12" cy="14" r="3.4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+            <span>Upload photo</span>
+          </div>
+          <div class="photo-corner tl" aria-hidden="true"></div>
+          <div class="photo-corner tr" aria-hidden="true"></div>
+          <div class="photo-corner bl" aria-hidden="true"></div>
+          <div class="photo-corner br" aria-hidden="true"></div>
+        </div>
+        <label for="photoInput" class="photo-edit-btn" id="photoEditBtn">Change photo</label>
+        <input type="file" id="photoInput" accept="image/*" hidden>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-role">Fourth-year Civil Engineering Student</p>
+        <h1>Prisam KC</h1>
+        <p class="hero-tagline">Building a foundation in structural design, construction management, and sustainable infrastructure — one project at a time.</p>
+        <div class="hero-actions">
+          <a href="#resume" class="btn btn-primary">View resume</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="ruler"></div>
+      <h2>About</h2>
+      <p class="lede">
+        I'm a fourth-year civil engineering student with a focus on structural analysis and
+        sustainable design. I enjoy turning calculations and drawings into buildings and
+        infrastructure that hold up under real-world conditions. Edit this paragraph to
+        describe your interests, current coursework, and what kind of engineering work you're
+        looking for.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="section-inner">
+      <div class="ruler"></div>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <span class="skill-name">AutoCAD</span>
+        </div>
+        <div class="skill-block">
+          <span class="skill-name">Structural Analysis</span>
+        </div>
+        <div class="skill-block">
+          <span class="skill-name">STAAD.Pro</span>
+        </div>
+        <div class="skill-block">
+          <span class="skill-name">Surveying</span>
+        </div>
+        <div class="skill-block">
+          <span class="skill-name">Revit / BIM</span>
+        </div>
+        <div class="skill-block">
+          <span class="skill-name">Concrete Design</span>
+        </div>
+        <div class="skill-block">
+          <span class="skill-name">Project Estimation</span>
+        </div>
+        <div class="skill-block">
+          <span class="skill-name">MS Project</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="ruler"></div>
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-tag">Structural Design</div>
+          <h3>Project title one</h3>
+          <p>Short description of the project — the design problem, your role, and the
+            structural system used. Replace with your own capstone or coursework project.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Site Planning</div>
+          <h3>Project title two</h3>
+          <p>Short description of the project — scope, tools used (AutoCAD, Revit, STAAD),
+            and the outcome. Replace with details from your own work.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Construction Management</div>
+          <h3>Project title three</h3>
+          <p>Short description of the project — timeline, budget considerations, and any
+            site experience gained. Replace with your own project summary.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section section-alt">
+    <div class="section-inner">
+      <div class="ruler"></div>
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker">1</div>
+          <div class="timeline-content">
+            <h3>Bachelor of Civil Engineering</h3>
+            <p class="timeline-meta">Your University Name · Expected 2027</p>
+            <p>Currently in fourth year, focusing on structural engineering and construction
+              management coursework.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker">2</div>
+          <div class="timeline-content">
+            <h3>+2 / High School — Science</h3>
+            <p class="timeline-meta">Your School Name · Graduated 2022</p>
+            <p>Completed higher secondary education with a focus on physics, mathematics,
+              and chemistry.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <div class="section-inner">
+      <div class="ruler"></div>
+      <h2>Resume</h2>
+      <p class="lede">Upload your CV as a PDF so visitors can view or download it directly from this page.</p>
+
+      <div class="resume-card">
+        <div class="resume-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28">
+            <path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M14 2v5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="resume-body">
+          <p class="resume-status" id="resumeStatus">No CV uploaded yet</p>
+          <div class="resume-actions">
+            <label for="cvInput" class="btn btn-primary">Upload CV (PDF)</label>
+            <input type="file" id="cvInput" accept="application/pdf" hidden>
+            <a href="#" id="cvDownload" class="btn btn-outline" download="CV.pdf" hidden>Download CV</a>
+            <button type="button" id="cvRemove" class="btn btn-text" hidden>Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="section-inner">
+      <div class="ruler"></div>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:your.email@example.com">your.email@example.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Phone</span>
+          <a href="tel:+9770000000000">+977 000-0000000</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Location</span>
+          <span>Kathmandu, Nepal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">Prisam KC — Civil Engineering</div>
+
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/prisam-kc-3b0ab8370/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="7.5" cy="8" r="1.3" fill="currentColor"/>
+          <path d="M7.5 11v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M11.5 17.5V13a2.3 2.3 0 0 1 4.6 0v4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M11.5 11v.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/prisam.jung/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" class="social-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/kce.lucifer.3" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile" class="social-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M14 8.5h-1.4a1.6 1.6 0 0 0-1.6 1.6V11H14l-.4 2.2h-1.6V21" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-copy">&copy; 2026 Prisam KC. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
